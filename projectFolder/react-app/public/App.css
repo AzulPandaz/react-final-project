@@ -1,0 +1,173 @@
+.logo{
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 14px;
+}
+
+.header{
+  background-color:lightslategray
+}
+
+.dropDown{
+  padding-bottom: 15px;
+}
+
+.cardDiv{
+  margin: 10px 0px;
+}
+
+
+
+.icon {
+  margin-top: 20px;
+  display: inline-block;
+  width: calc(12px + 10 * ((100vw - 320px) / 680));
+  height: calc(12px + 10 * ((100vw - 320px) / 680));
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.contact-info{
+  line-height: 0.5;
+  margin: 10px 0px;
+}
+
+
+.footer-section{
+  background-color: #778899;
+}
+
+footer{
+  color: white;
+}
+
+.header-link{
+  margin: 5px 0px;
+  color: #CBDFBD;
+  /* background-color: ; */
+  font-family: 'Syne Mono', monospace;
+  font-weight: 600;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 680))
+  
+}
+
+.last-main{
+  margin: 10px 0px;
+}
+
+.cardDiv-md{
+  margin: 10px 0px;
+}
+
+.signUp{
+  color:wheat;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 30px;
+  font-size: calc(14px + 8 * ((100vw - 320px) / 680))
+}
+
+.header-logo{
+  color: wheat;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 900;
+  font-size: calc(32px + 14 * ((100vw - 320px) / 680));
+  margin-top: 30px;
+}
+
+.underline{
+  /* color: black; */
+  text-decoration-color: black;
+}
+
+.home-logo{
+  color: wheat;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: 900;
+  font-size: calc(26px + 10 * ((100vw - 320px) / 680));
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.aboutUs{
+  margin: 10px 0px;
+}
+
+.allItemsImg{
+  height: 400px;
+}
+.loginHeader{
+  color:#778899 ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.passwordHeader{
+  color:#778899 ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.sign-button{
+  margin: 10px 0px;
+}
+
+.login-header{
+  color:#778899 ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.card-item{
+  margin: 10px 0px;
+  
+}
+
+.allItemsImg{
+  width: 150px;
+  height: 320px;
+}
+
+.imgDiv img{
+  margin:  10px 0px;
+}
+
+.aboutUsText{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 680))
+}
+
+.all-item-header{
+  font-size: calc(21px + 10 * ((100vw - 320px) / 680));
+  color:#778899;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 800;
+  
+}
+
+.card-width{
+  width: calc(288px + (400 - 288) * ((100vw - 300px) / (1600 - 300)));
+  margin: 15px 0px;
+}
+
+.single-main{
+  margin: 30px 0px;
+}
+
+.sign-up-img{
+  margin-top: 20px;
+}

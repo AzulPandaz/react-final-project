@@ -51,6 +51,7 @@ CREATE TABLE items
     wheel_size TINYINT,
     wheel_hardness TINYINT,
     load_capacity SMALLINT,
+    item_image VARCHAR(100),
     CONSTRAINT pk_id PRIMARY KEY (id),
     CONSTRAINT fk_board_type_id FOREIGN KEY (board_type) REFERENCES board_type (board_type_id),
     CONSTRAINT fk_brand_id FOREIGN KEY (brand) REFERENCES brand (brand_id),
