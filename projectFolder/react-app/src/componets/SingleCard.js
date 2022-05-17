@@ -10,10 +10,10 @@ const SingleCard=(props)=>{
         <section className="section single-main">
             <div className="container">
                 <div className="row justify-content-sm-center">
-                    <div className="col-sm-10 col-md-7 text-center">
-                        <img src="./media/knightHoodie.jpg" alt="single-product-img" />
+                    <div className="col-sm-10 col-md-4 text-center">
+                        <img src={props.img} alt="single-product-img" className="card-img-top img-fluid allItemsImg" />
                     </div>
-                    <div className="col-sm-12 col-md-5 text-sm-center text-md-left">
+                    <div className="col-sm-12 col-md-8 text-sm-center text-md-left">
                         <p className="item-name">
                             Name: {props.name}
                         </p>

@@ -21,7 +21,7 @@ const AllItems = () => {
                         {data.map(item => {
                             return (
                                 <div className="card-div col-sm-12 col-md-4 d-flex justify-content-center justify-content-md-between">
-                                    <Card key={item.id} name={item.item_name} brand={item.brand} boardType={item.board_type} id={item.id} />
+                                    <Card key={item.id} id={item.id} img={item.item_image} name={item.item_name} brand={item.brand} boardType={item.board_type}  />
                                 </div>
                             )
                         })}

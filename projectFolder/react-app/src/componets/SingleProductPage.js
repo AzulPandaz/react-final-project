@@ -9,7 +9,7 @@ const SingleProduct=()=>{
 
     useEffect(() => {
         const url = `http://localhost:3001/api/items/${id}`;
-        fetch(url).then(res => res.json()).then(item => setData(item));
+        fetch(url).then(res => res.json()).then(item=> setData(item))
     }, [])
     console.log(data)
 
@@ -17,20 +17,9 @@ const SingleProduct=()=>{
         <section className="section single-main">
             <div className="container">
                 <div className="row justify-content-sm-center">
-                    <div className="col-sm-10 col-md-7 text-center">
-                        <img src="./media/knightHoodie.jpg" alt="single-product-img" />
-                    </div>
-                    {data.map(item => {
-                        return (
                                 <div className="col-sm-12 col-md-5 text-sm-center text-md-left">
-                                    <SingleCard key={item.id} name={item.item_name} brand={item.brand} board_type={item.board_type} year_release={item.year_release} desinger={item.designer} wheel_size={item.wheel_size} wheel_hardness={item.wheel_hardness} load_capacity={item.load_capacity} description={item.description} />
+                                    <SingleCard  key={data.id} name={data.item_name} cost={data.item_cost} brand={data.brand} board_type={data.board_type} year_release={data.year_release} designer={data.designer} wheel_size={data.wheel_size} wheel_hardness={data.wheel_hardness} load_capacity={data.load_capacity} description={data.description} img={data.item_image}/>
                                 </div>
-                            )
-                        })}
-                       <SingleCard key={item.id} name={item.item_name} brand={item.brand} />
-                        <button className="btn btn-info add-button">
-                            Add to Cart
-                        </button>
                     </div>
                 </div>
         </section>
@@ -38,3 +27,4 @@ const SingleProduct=()=>{
 }
 
 export default SingleProduct
+

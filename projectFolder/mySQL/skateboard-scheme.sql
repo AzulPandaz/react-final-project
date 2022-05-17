@@ -51,7 +51,7 @@ CREATE TABLE items
     wheel_size TINYINT,
     wheel_hardness TINYINT,
     load_capacity SMALLINT,
-    item_image VARCHAR(100),
+    item_image VARCHAR(200),
     CONSTRAINT pk_id PRIMARY KEY (id),
     CONSTRAINT fk_board_type_id FOREIGN KEY (board_type) REFERENCES board_type (board_type_id),
     CONSTRAINT fk_brand_id FOREIGN KEY (brand) REFERENCES brand (brand_id),
@@ -63,5 +63,5 @@ CREATE TABLE items_to_items_included(
     items_id INT UNSIGNED,
     item_included_id TINYINT,
     CONSTRAINT fk_items_items_included_id FOREIGN KEY (items_id) REFERENCES items (id),
-    CONSTRAINT fk_item_included_id FOREIGN KEY (item_included_id) REFERENCES item_included(item_included_id)
+    CONSTRAINT fk_item_included_id FOREIGN KEY (item_included_id) REFERENCES item_included (item_included_id)
 );
