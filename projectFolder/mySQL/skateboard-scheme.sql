@@ -37,6 +37,13 @@ CREATE TABLE item_included
         CONSTRAINT pk_item_included PRIMARY KEY (item_included_id)
     );
 
+CREATE TABLE user_data
+    (
+        user_data_id TINYINT AUTO_INCREMENT,
+        username VARCHAR (60),
+        password VARCHAR (70),
+        CONSTRAINT pk_user_data PRIMARY KEY (user_data_id)
+    );
 
 CREATE TABLE items
 (

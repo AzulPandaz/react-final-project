@@ -44,6 +44,9 @@ const SingleCard=(props)=>{
                         <p className="item-description">
                             Description: {props.description}
                         </p>
+                        <p className="item-description">
+                            Items included: {props.item_included}
+                        </p>
                         <button className="btn btn-info add-button">
                             Add to Cart
                         </button>

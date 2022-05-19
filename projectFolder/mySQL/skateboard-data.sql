@@ -202,3 +202,32 @@ INNER JOIN board_type AS br
 INNER JOIN brand AS b
 ON i.brand = b.brand_id AND br.board_type_id = i.board_type
 WHERE i.board_type = 4;
+
+--SINGLE PAGE
+SELECT i.id, i.item_name, i.description, i.designer, br.board_type, b.brand, i.item_image, ws.wheel_size, wh.wheel_hardness, ii.item_included
+FROM items AS i 
+INNER JOIN board_type AS br
+INNER JOIN brand AS b
+INNER JOIN wheel_size AS ws
+INNER JOIN wheel_hardness AS wh
+INNER JOIN item_included AS ii
+INNER JOIN items_to_items_included AS itii
+ON i.brand = b.brand_id AND br.board_type_id = i.board_type AND i.wheel_size = ws.wheel_size_id and i.wheel_hardness = wh.wheel_hardness_id AND i.id = itii.items_id AND ii.item_included_id = itii.item_included_id
+WHERE i.id = 1;
+
+
+ii.item_included_id = itii.items_id and ii.item_included_id = itii.item_included_id
+
+  {data.map(item => {
+                        {if(item.name.includes(data[0].name && !item.item_includes(data[0].item_includes))){
+                                return (
+                                    setstateArr(prev=>[...prev,item_includes])
+                                )
+                            }else{
+                                <div className="product col-sm-6 col-md-4">
+                                <Product key={item.jewelry_id} id={item.jewelry_id} img={item.jewelry_img} name={item.jewelry_name} desc={item.jewelry_desc} />
+                                <div className="item-includes">{}</div>
+                                </div>
+                            }
+                            }
+                    })}

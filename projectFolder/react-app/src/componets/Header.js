@@ -28,7 +28,7 @@ const Header=()=>{
                     <Link className="dropdown-item" to="./AboutPage">About</Link >
                 </div>
             </div>
-            <div className="div d-none d-md-block">
+            <div className="div d-none d-md-block col-12">
                 <nav className="nav header-nav justify-content-between">
                     <Link to="./AllItemsPage" className="nav-link header-link btn">All products</Link >
                     <Link to="./StreetBoard" className="nav-link header-link btn">Street Board</Link >
