@@ -17,7 +17,7 @@ const StreetBoard=()=>{
                 <div className='container'>
                     <div className='row'>
                     <h3 className="skateboard-header all-item-header">
-                        LongBoards
+                        Streetboards
                     </h3>
                     <div className="board-list row  justify-content-md-between ">
                         {data.map(item => {

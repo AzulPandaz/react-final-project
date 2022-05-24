@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Outlet } from "react-router-dom"
+import { Link} from "react-router-dom"
 
 const Header=()=>{
     
@@ -8,10 +8,10 @@ const Header=()=>{
         <div className="container">
             <div className="row">
                 <div className="logo-div col-9">
-                   <Link to="/"><h1 className="header-logo ">Panda's Skateshop</h1></Link > 
+                   <Link to="/" className="text-dec"><h1 className="header-logo ">Panda's Skateshop</h1></Link> 
                 </div>
                 <div className="logo-div col-3 row justify-content-end">
-                    <Link to="/SignUpPage" className="col-md-8 text-center signUp">Sign Up</Link >
+                    <Link to="/SignUpPage" className="col-md-8 text-center signUp">Sign Up</Link>
                 </div>
             </div>
             <div className="dropdown col-10-sm text-center dropDown d-sm-block d-md-none">

@@ -17,6 +17,6 @@ server.use('/api', router)
 
 const PORT = process.env.PORT || 3001
 server.listen(PORT, ()=>{
-    console.log(`Not the port ${PORT} running...`)
+    console.log(`Port ${PORT} is running...`)
 })
 

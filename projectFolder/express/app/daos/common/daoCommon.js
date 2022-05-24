@@ -27,7 +27,7 @@ const daoCommon = {
 
     findById:(res,table, id)=>{
         con.execute(
-            `SELECT i.id, i.item_name, i.description, i.designer, i.load_capacity, br.board_type, b.brand, i.item_image, ws.wheel_size, wh.wheel_hardness, ii.item_included
+            `SELECT i.id, i.item_name, i.description, i.designer, i.load_capacity, br.board_type, b.brand, i.item_image, ws.wheel_size, wh.wheel_hardness, ii.item_included, i.item_cost
             FROM items AS i 
             INNER JOIN board_type AS br
             INNER JOIN brand AS b
@@ -50,24 +50,7 @@ const daoCommon = {
                 }
             }
         )
-    },
-
-    countAll:(res, table)=>{
-        con.execute(
-            `SELECT COUNT(*) count FROM ${table}`,
-            (error,rows)=>{
-                if(!error){
-                    if(rows.length === 1){
-                        res.json(...rows)
-                    } else {
-                        res.json(rows)
-                    }
-                } else {
-                    console.log(`DAO count all ERROR`, error)
-                }
-            }
-        )
-    },
+    }
     
 
 }

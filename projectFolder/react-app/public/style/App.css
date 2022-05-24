@@ -9,6 +9,10 @@
   background-color:lightslategray
 }
 
+.text-dec:hover{
+  text-decoration-color: #CBDFBD;
+}
+
 .dropDown{
   padding-bottom: 15px;
 }
@@ -74,8 +78,13 @@ footer{
   text-decoration: none;
   font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 30px;
+  margin:auto;
   font-size: calc(14px + 8 * ((100vw - 320px) / 680))
+}
+
+.signUp:hover{
+  color: #CBDFBD;
+  text-decoration-color: white;
 }
 
 .header-logo{
@@ -197,3 +206,35 @@ footer{
   color: whitesmoke;
   font-family: 'Syne Mono', monospace;
 }
+
+/* SINGLE CARD STYLE */
+.single-item-text{
+  font-weight: 800;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.single-page-card-img{
+  width: calc(250px + (350 - 250) * ((100vw - 300px) / (1600 - 300)));
+  height: 500px;
+}
+
+/* Main Page styling */
+
+.info-text{
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+  color: black;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.details-text{
+  color: darkkhaki;
+  font-weight: 700;
+  font-family: 'Syne Mono', monospace;
+}
+
+.height-img{
+  height: 600px;
+}
+

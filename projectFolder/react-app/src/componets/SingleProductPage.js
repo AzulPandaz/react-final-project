@@ -24,8 +24,6 @@ const SingleProduct = () => {
         return (
             <section className="section single-main">
                 <div className="container">
-                    <div className="row justify-content-sm-center">
-                        <div className="col-sm-12 col-md-5 text-sm-center text-md-left">
                             {data.map(item => {
                                 if (item.item_included.includes(data[0].item_included)) {
                                     return (
@@ -36,14 +34,9 @@ const SingleProduct = () => {
                                     )
                                 }
                             })}
-
-
-                        </div>
-                    </div>
                 </div>
             </section>
         )
-
     }
 
 export default SingleProduct
